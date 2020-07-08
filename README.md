@@ -20,7 +20,7 @@ export BOSH_CLIENT=ops_manager BOSH_CLIENT_SECRET=fakesecret BOSH_CA_CERT=/var/t
 ```
 git clone https://github.com/svrc-pivotal/pks-vrli-stopper && cd pks-vrli-stopper
 bosh create-release --force
-bosh upload-release ./dev_releases/vrli-stopper/vrli-stopper-0+dev.1.yml
+bosh upload-release ./dev_releases/pks-vrli-stopper/pks-vrli-stopper-0+dev.1.yml
 
 ```
 4. Configure the addon from this repo

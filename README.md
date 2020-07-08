@@ -1,8 +1,8 @@
-# PKS VRLI stopper
+# Tanzu Kubernetes Grid Integrated (TKGI) / PKS VRLI stopper
 
 ## What does this do?
 
-PKS has a bug (July 2020) where the vRLI fluentd process runs even when vRLI is not configured.  This can lead to other syslog aggregators using our rsyslog functionality via Blackbox to get parsing errors from the resulting fluentd output on the PKS API VM.
+TKGI/PKS has a bug (July 2020) where the vRLI fluentd process runs even when vRLI is not configured.  This can lead to other syslog aggregators using our rsyslog functionality via Blackbox to get parsing errors from the resulting fluentd output on the PKS API VM.
 
 This addon will force the PKS vRLI fluentd process to do nothing.
 

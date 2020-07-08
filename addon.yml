@@ -1,0 +1,20 @@
+---
+name: pks-vrli-stopper
+
+releases:
+- name: pks-vrli-stopper
+  version: 0+dev.1
+
+addons:
+  - name: vrli-stopper
+    jobs:
+    - name: vrli-stopper
+      release: pks-vrli-stopper
+
+    include: 
+      jobs:
+      - name: pks-api
+        release: pks-api
+
+      stemcell:
+      - os: ubuntu-xenial
